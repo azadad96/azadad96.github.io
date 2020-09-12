@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>azadad.ml</title>
+    <meta charset="UTF-8">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link type="text/css" rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <script src="audio-visualizer/index.js"></script>
+</head>
+<body>
+    <nav>
+        <div id="buttons">
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="#preview">Preview</a>
+        </div>
+    </nav>
+    <div class="panel" id="contact">
+        <div id="contactbuttons">
+            <a href="mailto:azadad6@pm.me" style="background-color: #2E5894; border-color: #172C4A;">
+                <img src="images/email.svg"/>
+                E-Mail
+            </a>
+            <a href="https://github.com/azadad96" style="background-color: #24292E; border-color: #121517;">
+                <img src="images/github.png"/>
+                GitHub
+            </a>
+            <a href="https://twitter.com/_azadad96" style="background-color: #1DA1F2; border-color: #0F5179;">
+                <img src="images/twitter.svg"/>
+                Twitter
+            </a>
+            <a href="javascript:showdc();" style="background-color: #7389DC; border-color: #40456E;" id="discordbutton">
+                <img src="images/discord.svg"/>
+                Discord
+            </a>
+            <a href="https://t.me/azadad96" style="background-color: #24A1DE; border-color: #12516F;">
+                <img src="images/telegram.svg"/>
+                Telegram
+            </a>
+        </div>
+    </div>
+    <div class="panel" id="about">
+        <h1>Who am I?</h1>
+        <p>
+            I'm just some guy that likes making stuff and uploading that stuff to his GitHub.<br/>
+            Below you can find an example for that stuff.
+            It's also right <a href="https://github.com/azadad96/audio_visualizer" target="_blank">here</a>.<br/>
+            Just upload any audio file and the JS will do its magic.
+        </p>
+    </div>
+    <div class="panel" id="preview">
+        <input type="file" id="audio_file" accept="audio/*"/>
+        <label id="lbl" for="audio_file">
+            <img src="images/note.svg"/>
+            select audio
+        </label>
+        <canvas id="canvas" hidden></canvas>
+    </div>
+    <footer>&copy; 2020 Azad Ad</footer>
+    <div id="discordpopup">
+        <img src="images/discord_full.svg"/>
+        <a href="javascript:hidedc();">x</a>
+        <pre>azadad96#1287</pre>
+    </div>
+</body>
+</html>
